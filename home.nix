@@ -1,0 +1,49 @@
+{ config, pkgs, inputs, ... }:
+
+{
+  imports = [
+    # inputs.zen-browser.homeModules.beta
+    inputs.zen-browser.homeModules.twilight
+    # inputs.zen-browser.homeModules.twilight-official
+  ];
+
+  home.username = "nev";
+  home.homeDirectory = "/home/nev";
+  home.stateVersion = "25.05";
+  
+  programs.zen-browser.enable = true;
+
+  programs.git = {
+    enable = true;
+    settings.user = {
+      name  = "Nevimmu";
+      email = "nevimmu@gmail.com";
+      init.defaultBranch = "main";
+    };
+  };
+
+  home.packages = with pkgs; [
+    neovim
+    discord
+    spotify
+    nixpkgs-fmt
+    gcc
+    rofi
+    yazi
+    nautilus
+    vscode
+    dunst
+    kdePackages.filelight
+    hyprshot
+  ];
+
+  home.file.".config/hypr".source = ./config/hypr;
+  home.file.".config/fish".source = ./config/fish;
+  home.file.".config/waybar".source = ./config/waybar;
+  home.file.".config/kitty".source = ./config/kitty;
+  home.file.".config/rofi".source = ./config/rofi;
+  home.file.".config/fastfetch".source = ./config/fastfetch;
+  home.file.".config/yazi".source = ./config/yazi;
+  home.file.".config/btop".source = ./config/btop;
+  home.file.".config/dunst".source = ./config/dunst;
+}
