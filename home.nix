@@ -28,7 +28,7 @@
     enable = true;
     cursorTheme = {
       name = config.home.pointerCursor.name;
-      size = config.home.pointerCursor.size;
+      size = 26;
     };
   };
 
