@@ -81,12 +81,21 @@
     };
   };
 
+  services.journald.extraConfig = "SystemMaxUse=1G";
+
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
   };
 
   programs.fish.enable = true;
+
+  # Steam configuration
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    localNetworkGameTransfers.openFirewall = true;
+  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nev = {
