@@ -13,6 +13,25 @@
   
   programs.zen-browser.enable = true;
 
+  # Cursor theme configuration for all apps including Electron
+  home.pointerCursor = {
+    enable = true;
+    name = "BreezeX-RosePine-Linux";
+    package = pkgs.rose-pine-cursor;
+    size = 28;
+    gtk.enable = true;
+    x11.enable = true;
+  };
+
+  # Also ensure GTK settings are configured for consistency
+  gtk = {
+    enable = true;
+    cursorTheme = {
+      name = config.home.pointerCursor.name;
+      size = config.home.pointerCursor.size;
+    };
+  };
+
   programs.git = {
     enable = true;
     settings.user = {
@@ -35,6 +54,7 @@
     dunst
     kdePackages.filelight
     hyprshot
+    rose-pine-cursor
   ];
 
   home.file.".config/hypr".source = ./config/hypr;
