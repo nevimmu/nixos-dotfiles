@@ -5,6 +5,7 @@
     # inputs.zen-browser.homeModules.beta
     inputs.zen-browser.homeModules.twilight
     # inputs.zen-browser.homeModules.twilight-official
+    ../../modules/default.nix
   ];
 
   home.username = "nev";
@@ -61,7 +62,7 @@
     ".config/hypr".source = ../../config/hypr;
     ".config/fish".source = ../../config/fish;
     ".config/waybar".source = ../../config/waybar;
-    ".config/kitty".source = ../../config/kitty;
+    # ".config/kitty".source = ../../config/kitty;
     ".config/rofi".source = ../../config/rofi;
     ".config/fastfetch".source = ../../config/fastfetch;
     ".config/yazi".source = ../../config/yazi;
