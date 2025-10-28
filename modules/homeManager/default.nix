@@ -1,6 +1,7 @@
 # HomeManager default module
 {
 	imports = [
-		./terminal/default.nix
+		./kitty.nix
+		./fastfetch.nix
 	];
 }
