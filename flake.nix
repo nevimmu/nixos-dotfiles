@@ -16,20 +16,13 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, zen-browser, ... }: {
+  outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations.BunnyGirl = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
       modules = [
         ./hosts/desktop/configuration.nix
-        home-manager.nixosModules.home-manager {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.nev = import ./hosts/desktop/home.nix;
-            backupFileExtension = "backup";
-            extraSpecialArgs = { inputs = { inherit zen-browser; }; };
-          };
-        }
+        inputs.home-manager.nixosModules.home-manager
       ];
     };
   };

@@ -1,9 +1,10 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      inputs.home-manager.nixosModules.home-manager
     ];
 
   # Bootloader.
@@ -106,6 +107,16 @@
     packages = with pkgs; [
     #  tree
     ];
+  };
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    backupFileExtension = "backup";
+    users = {
+      nev = import ./home.nix;
+    };
   };
 
   # Install firefox.
