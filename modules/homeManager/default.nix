@@ -6,5 +6,6 @@
 		./dunst.nix
 		./fish.nix
 		./btop.nix
+		./waybar/default.nix
 	];
 }

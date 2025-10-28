@@ -134,7 +134,6 @@
     starship
     fastfetch
     wget
-    waybar
     git
     swww
     wlogout
