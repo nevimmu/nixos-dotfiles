@@ -2,5 +2,6 @@
 {
 	imports = [
 		./homeManager/default.nix
+		./nixos/default.nix
 	];
 }

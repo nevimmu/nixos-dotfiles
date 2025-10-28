@@ -4,6 +4,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/nixos/default.nix
       inputs.home-manager.nixosModules.home-manager
     ];
 
@@ -133,7 +134,6 @@
     starship
     fastfetch
     wget
-    kitty
     waybar
     btop
     git

@@ -2,10 +2,8 @@
 
 {
   imports = [
-    # inputs.zen-browser.homeModules.beta
     inputs.zen-browser.homeModules.twilight
-    # inputs.zen-browser.homeModules.twilight-official
-    ../../modules/default.nix
+    ../../modules/homeManager/default.nix
   ];
 
   home.username = "nev";
@@ -52,7 +50,6 @@
     yazi
     nautilus
     vscode
-    dunst
     kdePackages.filelight
     hyprshot
     rose-pine-cursor
@@ -65,7 +62,6 @@
     ".config/rofi".source = ../../config/rofi;
     ".config/yazi".source = ../../config/yazi;
     ".config/btop".source = ../../config/btop;
-    ".config/dunst".source = ../../config/dunst;
   };
 
 }

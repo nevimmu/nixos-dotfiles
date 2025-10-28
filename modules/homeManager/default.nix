@@ -3,5 +3,6 @@
 	imports = [
 		./kitty.nix
 		./fastfetch.nix
+		./dunst.nix
 	];
 }

@@ -1,0 +1,5 @@
+# NixOS default module
+{
+	imports = [
+	];
+}
