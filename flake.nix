@@ -20,12 +20,12 @@
     nixosConfigurations.BunnyGirl = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./configuration.nix
+        ./hosts/desktop/configuration.nix
         home-manager.nixosModules.home-manager {
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.nev = import ./home.nix;
+            users.nev = import ./hosts/desktop/home.nix;
             backupFileExtension = "backup";
             extraSpecialArgs = { inputs = { inherit zen-browser; }; };
           };
