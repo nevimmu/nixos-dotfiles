@@ -135,7 +135,6 @@
     fastfetch
     wget
     waybar
-    btop
     git
     swww
     wlogout

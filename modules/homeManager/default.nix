@@ -5,5 +5,6 @@
 		./fastfetch.nix
 		./dunst.nix
 		./fish.nix
+		./btop.nix
 	];
 }
