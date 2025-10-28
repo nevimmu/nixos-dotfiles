@@ -4,5 +4,6 @@
 		./kitty.nix
 		./fastfetch.nix
 		./dunst.nix
+		./fish.nix
 	];
 }

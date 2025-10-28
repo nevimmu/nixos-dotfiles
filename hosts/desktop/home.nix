@@ -57,7 +57,6 @@
 
   home.file = {
     ".config/hypr".source = ../../config/hypr;
-    ".config/fish".source = ../../config/fish;
     ".config/waybar".source = ../../config/waybar;
     ".config/rofi".source = ../../config/rofi;
     ".config/yazi".source = ../../config/yazi;
