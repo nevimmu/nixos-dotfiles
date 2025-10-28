@@ -57,13 +57,16 @@
     rose-pine-cursor
   ];
 
-  home.file."./../../config/hypr".source = ./config/hypr;
-  home.file."./../../config/fish".source = ./config/fish;
-  home.file."./../../config/waybar".source = ./config/waybar;
-  home.file."./../../config/kitty".source = ./config/kitty;
-  home.file."./../../config/rofi".source = ./config/rofi;
-  home.file."./../../config/fastfetch".source = ./config/fastfetch;
-  home.file."./../../config/yazi".source = ./config/yazi;
-  home.file."./../../config/btop".source = ./config/btop;
-  home.file."./../../config/dunst".source = ./config/dunst;
+  home.file = {
+    ".config/hypr".source = ../../config/hypr;
+    ".config/fish".source = ../../config/fish;
+    ".config/waybar".source = ../../config/waybar;
+    ".config/kitty".source = ../../config/kitty;
+    ".config/rofi".source = ../../config/rofi;
+    ".config/fastfetch".source = ../../config/fastfetch;
+    ".config/yazi".source = ../../config/yazi;
+    ".config/btop".source = ../../config/btop;
+    ".config/dunst".source = ../../config/dunst;
+  };
+
 }
