@@ -24,7 +24,7 @@
 							size = "17G";
 							content = {
 								type = "swap";
-								randomEncryption = true;
+								randomEncryption = false;
 								resumeDevice = true;
 							};
 						};
