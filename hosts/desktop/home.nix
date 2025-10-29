@@ -8,7 +8,7 @@
 
   home.username = "nev";
   home.homeDirectory = "/home/nev";
-  home.stateVersion = "25.11";
+  home.stateVersion = "25.05";
   
   programs.zen-browser.enable = true;
 
