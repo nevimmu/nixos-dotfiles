@@ -12,9 +12,6 @@
   # Set HostName
   networking.hostName = "OfficeLady";
 
-  # Enable NVIDIA drivers.
-  nvidia.enable = true;
-
   # Enable Hyprland window manager with XWayland support.
   programs.hyprland = {
     enable = true;
