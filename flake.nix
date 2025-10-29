@@ -14,6 +14,10 @@
         nixpkgs.follows = "nixpkgs";
       };
     };
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
@@ -23,6 +27,7 @@
       modules = [
         ./hosts/desktop/configuration.nix
         inputs.home-manager.nixosModules.home-manager
+        inputs.disko.nixosModules.disko
       ];
     };
   };

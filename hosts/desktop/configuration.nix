@@ -4,6 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
+      ./disko.nix
       ../../modules/nixos/default.nix
       inputs.home-manager.nixosModules.home-manager
     ];
