@@ -7,5 +7,6 @@
 		./fish.nix
 		./btop.nix
 		./waybar/default.nix
+		./gimp.nix
 	];
 }
