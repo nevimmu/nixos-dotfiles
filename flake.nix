@@ -30,6 +30,16 @@
         inputs.disko.nixosModules.disko
       ];
     };
+
+    nixosConfigurations.OfficeLady = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/thinkpad/configuration.nix
+        inputs.home-manager.nixosModules.home-manager
+        inputs.disko.nixosModules.disko
+      ];
+    };
   };
 }
 
