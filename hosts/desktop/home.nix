@@ -41,6 +41,13 @@
   };
 
   home.packages = with pkgs; [
+    vim
+    zoxide
+    starship
+    fastfetch
+    wget
+    swww
+    wlogout
     neovim
     discord
     spotify
