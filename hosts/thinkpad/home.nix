@@ -10,6 +10,9 @@
   home.homeDirectory = "/home/nev";
   home.stateVersion = "25.05";
   
+  # Thinkpad-specific monitor configuration
+  hyprland.monitorsConfig = "thinkpad";
+  
   programs.zen-browser.enable = true;
 
   # Cursor theme configuration for all apps including Electron

@@ -10,6 +10,9 @@
   home.homeDirectory = "/home/nev";
   home.stateVersion = "25.05";
   
+  # Desktop-specific monitor configuration
+  hyprland.monitorsConfig = "desktop";
+  
   programs.zen-browser.enable = true;
 
   # Cursor theme configuration for all apps including Electron
