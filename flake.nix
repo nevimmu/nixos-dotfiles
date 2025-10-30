@@ -4,10 +4,12 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     hyprland.url = "github:hyprwm/Hyprland";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs = {
@@ -15,10 +17,17 @@
         nixpkgs.follows = "nixpkgs";
       };
     };
+
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
@@ -29,6 +38,7 @@
         ./hosts/desktop/configuration.nix
         inputs.home-manager.nixosModules.home-manager
         inputs.disko.nixosModules.disko
+        inputs.sops-nix.nixosModules.sops
       ];
     };
 
@@ -39,6 +49,7 @@
         ./hosts/thinkpad/configuration.nix
         inputs.home-manager.nixosModules.home-manager
         inputs.disko.nixosModules.disko
+        inputs.sops-nix.nixosModules.sops
       ];
     };
   };

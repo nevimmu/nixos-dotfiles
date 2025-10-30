@@ -1,0 +1,32 @@
+{ pkgs, ... }:
+
+{
+  sops = {
+    defaultSopsFile = ../../secrets/secrets.yaml;
+    defaultSopsFormat = "yaml";
+    age.keyFile = "/home/nev/.config/sops/age/keys.txt";
+
+    secrets = {
+      "ssh/config" = {
+        owner = "nev";
+        mode = "0600";
+      };
+      "ssh/github" = {
+        owner = "nev";
+        mode = "0600";
+      };
+      "ssh/maid0" = {
+        owner = "nev";
+        mode = "0600";
+      };
+      "ssh/aur" = {
+        owner = "nev";
+        mode = "0600";
+      };
+    };
+  };
+
+	environment.systemPackages = with pkgs; [
+		sops
+	];
+}

@@ -7,5 +7,8 @@
 		./nvidia.nix
 		./pipewire.nix
 		./loginManager.nix
+		./environmentVariables.nix
+		./sops.nix
+		./ssh.nix
 	];
 }
