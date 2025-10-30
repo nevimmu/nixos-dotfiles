@@ -1,3 +1,14 @@
+{ pkgs, lib, config, ... }:
+
+let
+  monitorsProfile = config.hyprland.monitorsConfig or null;
+  selectedOutput = if monitorsProfile == "desktop" then "DP-1"
+				   else if monitorsProfile == "thinkpad" then "eDP-1"
+				   else "DP-1"; # fallback
+  persistentForOutput = builtins.listToAttrs [
+	{ name = selectedOutput; value = [ "1" "2" "3" "4" "5" ]; }
+  ];
+in
 {
 	home.file = {
 		".config/waybar/audio_switch.sh".source = ./audio_switch.sh;
@@ -12,7 +23,7 @@
 				"position" = "left";
 				"mod" = "dock";
 				"width" = 50;
-				"output" = "DP-1";
+				"output" = selectedOutput;
 				"margin-left" = 20;
 				"margin-right" = -10;
 				"margin-top" = 20;
@@ -105,9 +116,7 @@
 						"active" = "";
 						"empty" = "";
 					};
-					"persistent-workspaces" = {
-						"DP-1" = ["1" "2" "3" "4" "5"];
-					};
+					"persistent-workspaces" = persistentForOutput;
 				};
 
 				"clock#H" = {
