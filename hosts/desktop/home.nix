@@ -63,7 +63,6 @@
   ];
 
   home.file = {
-    ".config/hypr".source = ../../config/hypr;
     ".config/rofi".source = ../../config/rofi;
     ".config/yazi".source = ../../config/yazi;
   };
