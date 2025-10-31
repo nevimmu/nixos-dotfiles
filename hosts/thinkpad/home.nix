@@ -56,7 +56,6 @@
     spotify
     nixpkgs-fmt
     gcc
-    rofi
     yazi
     nautilus
     vscode
@@ -64,9 +63,4 @@
     hyprshot
     rose-pine-cursor
   ];
-
-  home.file = {
-    ".config/rofi".source = ../../config/rofi;
-  };
-
 }

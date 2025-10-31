@@ -8,6 +8,7 @@
 		./btop.nix
 		./waybar/default.nix
 		./gimp.nix
+		./rofi.nix
 		./hyprland/default.nix
 	];
 }
