@@ -54,6 +54,11 @@
 	boot.initrd.verbose = false;
 	boot.plymouth.enable = true;
 
+  # Custom Fonts
+  fonts.packages = [
+    inputs.cartographcf-nf.packages.${pkgs.system}.cartographcf-nf
+  ];
+
   # Enable networking
   networking.networkmanager.enable = true;
 
