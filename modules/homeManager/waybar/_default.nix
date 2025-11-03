@@ -11,6 +11,7 @@ let
   
   # Battery module only for thinkpad
   batteryModule = if monitorsProfile == "thinkpad" then [ "battery" ] else [ ];
+  audioSwitch = if monitorsProfile == "desktop" then [ "custom/audio_switch" ] else [ ];
 in
 {
 	home.file = {
@@ -42,8 +43,7 @@ in
 				"modules-right" = [
 					"custom/server_temp"
 					"custom/spacer"
-					"custom/audio_switch"
-					"custom/spacer"
+				] ++ audioSwitch ++ [
 				] ++ batteryModule ++ [
 					"group/expand"
 					"clock#H"
@@ -198,6 +198,7 @@ in
 
 				"battery" = {
 					"format" = "{icon}";
+					"format-icons" = ["󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
 					"tooltip-format" = "{capacity}%";
 					"states" = {
 						"warning" = 30;
@@ -273,7 +274,7 @@ in
 			}
 
 			#battery {
-				color: #f6c177;
+				color: #e0def4;
 				background: inherit;
 				font-size: 20px;
 			}
