@@ -7,8 +7,7 @@
     cartographcf-nf.url = "git+ssh://git@github.com/nevimmu/CartographCFNerdFont.git";
 
     jams = {
-      # url = "github:nevimmu/jams-flake";
-      url = "path:/home/nev/Projects/jams-flake";
+      url = "github:nevimmu/JAMS";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

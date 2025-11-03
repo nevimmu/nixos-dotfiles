@@ -415,14 +415,17 @@
         "pyproject-nix": "pyproject-nix"
       },
       "locked": {
-        "lastModified": 1762043715,
-        "narHash": "sha256-PCWnkLzkWqFAZ/7tY+NAMxF48PNZzUGVIjbtJfvtz+Q=",
-        "path": "/home/nev/Projects/jams-flake",
-        "type": "path"
+        "lastModified": 1762046719,
+        "narHash": "sha256-xCEXnYKL6+KS3OzO/Zw/Dr1VgbAyLQf6AQQS1JhQoZ8=",
+        "owner": "nevimmu",
+        "repo": "JAMS",
+        "rev": "5a7900bbfea15b7e7787268145bd5ae3cd2b3a00",
+        "type": "github"
       },
       "original": {
-        "path": "/home/nev/Projects/jams-flake",
-        "type": "path"
+        "owner": "nevimmu",
+        "repo": "JAMS",
+        "type": "github"
       }
     },
     "nixpkgs": {
