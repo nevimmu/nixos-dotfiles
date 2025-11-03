@@ -10,5 +10,6 @@
 		./gimp.nix
 		./rofi.nix
 		./hyprland/default.nix
+		./jams.nix
 	];
 }

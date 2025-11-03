@@ -6,6 +6,12 @@
     hyprland.url = "github:hyprwm/Hyprland";
     cartographcf-nf.url = "git+ssh://git@github.com/nevimmu/CartographCFNerdFont.git";
 
+    jams = {
+      # url = "github:nevimmu/jams-flake";
+      url = "path:/home/nev/Projects/jams-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
