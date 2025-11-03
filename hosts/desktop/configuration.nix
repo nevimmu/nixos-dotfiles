@@ -16,6 +16,9 @@
   # Enable NVIDIA drivers.
   nvidia.enable = true;
 
+  # Enable docker
+  docker.enable = true;
+
   # Enable Hyprland window manager with XWayland support.
   programs.hyprland = {
     enable = true;

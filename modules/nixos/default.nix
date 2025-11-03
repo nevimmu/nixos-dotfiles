@@ -10,5 +10,6 @@
 		./environmentVariables.nix
 		./sops.nix
 		./ssh.nix
+		./docker.nix
 	];
 }
