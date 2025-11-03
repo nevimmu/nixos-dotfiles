@@ -8,6 +8,9 @@ let
   persistentForOutput = builtins.listToAttrs [
 	{ name = selectedOutput; value = [ "1" "2" "3" "4" "5" ]; }
   ];
+  
+  # Battery module only for thinkpad
+  batteryModule = if monitorsProfile == "thinkpad" then [ "battery" ] else [ ];
 in
 {
 	home.file = {
@@ -40,6 +43,8 @@ in
 					"custom/server_temp"
 					"custom/spacer"
 					"custom/audio_switch"
+					"custom/spacer"
+				] ++ batteryModule ++ [
 					"group/expand"
 					"clock#H"
 					"clock#M"
@@ -190,6 +195,16 @@ in
 						"on-scroll-down" = "shift_down";
 					};
 				};
+
+				"battery" = {
+					"format" = "{icon}";
+					"tooltip-format" = "{capacity}%";
+					"states" = {
+						"warning" = 30;
+						"critical" = 15;
+					};
+					"rotate" = 0;
+				};
 			};
 		};
 
@@ -255,6 +270,24 @@ in
 				font-style: italic;
 				font-size: 25px;
 				margin-bottom: -8px;
+			}
+
+			#battery {
+				color: #f6c177;
+				background: inherit;
+				font-size: 20px;
+			}
+
+			#battery.charging {
+				color: #9ccfd8;
+			}
+
+			#battery.warning {
+				color: #f6c177;
+			}
+
+			#battery.critical {
+				color: #eb6f92;
 			}
 		'';
 	};
