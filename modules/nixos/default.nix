@@ -11,5 +11,6 @@
 		./sops.nix
 		./ssh.nix
 		./docker.nix
+		./tailscale.nix
 	];
 }
