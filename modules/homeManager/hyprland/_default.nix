@@ -1,10 +1,10 @@
 { pkgs, lib, config, ... }: 
 
 let
+	autostart = import ./autostart.nix;
 	keybinds = import ./keybinds.nix;
 	settings = import ./settings.nix;
 	rules = import ./rules.nix;
-	autostart = import ./autostart.nix;
 	
 	# Import the appropriate monitor configuration based on the host
 	monitors = 

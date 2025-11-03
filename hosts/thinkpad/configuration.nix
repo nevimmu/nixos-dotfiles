@@ -5,7 +5,7 @@
     [
       ./hardware-configuration.nix
       ./disko.nix
-      ../../modules/nixos/default.nix
+      ../../modules/nixos/_default.nix
       inputs.home-manager.nixosModules.home-manager
     ];
 

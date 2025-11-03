@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../../modules/homeManager/default.nix
+    ../../modules/homeManager/_default.nix
   ];
 
   # Thinkpad-specific monitor configuration

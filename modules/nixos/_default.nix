@@ -1,16 +1,16 @@
 # NixOS default module
 {
 	imports = [
-		./configuration.nix
 		./bluetooth.nix
-		./steam.nix
+		./configuration.nix
+		./docker.nix
+		./environmentVariables.nix
+		./loginManager.nix
 		./nvidia.nix
 		./pipewire.nix
-		./loginManager.nix
-		./environmentVariables.nix
 		./sops.nix
 		./ssh.nix
-		./docker.nix
+		./steam.nix
 		./tailscale.nix
 	];
 }
