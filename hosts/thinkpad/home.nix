@@ -50,7 +50,6 @@
     fastfetch
     wget
     swww
-    wlogout
     neovim
     discord
     spotify

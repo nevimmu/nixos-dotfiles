@@ -11,5 +11,7 @@
 		./rofi.nix
 		./hyprland/default.nix
 		./jams.nix
+		./hyprlock.nix
+		./wlogout.nix
 	];
 }
