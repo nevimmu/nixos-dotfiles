@@ -13,5 +13,9 @@
 		./jams.nix
 		./hyprlock.nix
 		./wlogout.nix
+		./git.nix
+		./cursor.nix
+		./home.nix
+		./zen.nix
 	];
 }
