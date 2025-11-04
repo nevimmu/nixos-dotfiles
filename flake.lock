@@ -856,11 +856,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1762281893,
-        "narHash": "sha256-CZY+165owYh1JDrlRrX/jF6jsAVX26/aUT8xOFFIXGw=",
+        "lastModified": 1762282839,
+        "narHash": "sha256-w28ntAI1FsRALH8k9UKznO4wnHD9Ay9mD0Ccx8y8NO4=",
         "owner": "nevimmu",
         "repo": "wallpaper-maid",
-        "rev": "8032ad51a35e17527f378fbfe32883e722057a57",
+        "rev": "4e3dd5d52bde2f991341b307aa376c44e6e73fb9",
         "type": "github"
       },
       "original": {
