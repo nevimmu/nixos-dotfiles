@@ -12,6 +12,7 @@
 		./gimp.nix
 		./git.nix
 		./home.nix
+		./hypridle.nix
 		./hyprlock.nix
 		./jams.nix
 		./kitty.nix
