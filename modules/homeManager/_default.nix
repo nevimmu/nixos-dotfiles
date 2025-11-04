@@ -4,6 +4,7 @@
 		./hyprland/_default.nix
 		./waybar/_default.nix
 
+		./affinity.nix
 		./btop.nix
 		./cursor.nix
 		./dunst.nix

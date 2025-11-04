@@ -7,5 +7,7 @@
 
   # Desktop-specific monitor configuration
   hyprland.monitorsConfig = "desktop";
+
+  affinity.enable = true;
   
 }

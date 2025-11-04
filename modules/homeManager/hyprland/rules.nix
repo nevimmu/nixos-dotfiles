@@ -25,6 +25,9 @@
 		"size 1036 931, title:Picture-in-Picture"
 		"move 22 22, title:Picture-in-Picture"
 
+		# Affinity
+		"tile, title:Affinity"
+
 		# Transparency on some programs
 		"opacity 0.95, class:^(Code|Spotify|discord|org.gnome.Nautilus)$"
 	];
