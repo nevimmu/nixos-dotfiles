@@ -2,22 +2,22 @@
 
 {
   home.packages = with pkgs; [
-    vim
-    zoxide
-    starship
-    fastfetch
-    wget
-    swww
-    neovim
     discord
-    spotify
-    nixpkgs-fmt
+    fastfetch
     gcc
-    yazi
-    nautilus
-    vscode
-    kdePackages.filelight
     hyprshot
+    kdePackages.filelight
+    nautilus
+    neovim
+    nixpkgs-fmt
     rose-pine-cursor
+    spotify
+    starship
+    swww
+    vim
+    vscode
+    wget
+    yazi
+    zoxide
   ];
 }
