@@ -20,6 +20,7 @@
 		./packages.nix
 		./rofi.nix
 		./wlogout.nix
+		./wallpaper-maid.nix
 		./zen.nix
 	];
 }
