@@ -21,6 +21,10 @@ let
 			suffix = "main";
 			fps = 60;
 		};
+		"garbage" = {
+			suffix = "side";
+			fps = 60;
+		};
 	};
 	
 	# Select monitors based on profile
