@@ -39,7 +39,7 @@
     extraSpecialArgs = { inherit inputs; };
     useGlobalPkgs = true;
     useUserPackages = true;
-    backupFileExtension = "backup";
+    backupCommand = "${pkgs.bash}/bin/bash -c 'if [ -e \"$1\" ]; then mv \"$1\" \"$1.backup\"; fi' --";
     users = {
       nev = import ./home.nix;
     };
