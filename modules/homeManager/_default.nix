@@ -2,6 +2,7 @@
 {
 	imports = [
 		./hyprland/_default.nix
+		./scripts/_default.nix
 		./waybar/_default.nix
 
 		./affinity.nix

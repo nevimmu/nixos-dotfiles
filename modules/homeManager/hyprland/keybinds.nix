@@ -30,7 +30,7 @@
 		"SUPER, SPACE, exec, wallpaper-maid"
 
 		# Projects
-		"SUPER, I, exec, ~/.config/hypr/scripts/projects"
+		"SUPER, I, exec, ~/.local/bin/projects.sh"
 
 		# Control window
 		"SUPER, F, toggleFloating,"
