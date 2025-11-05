@@ -13,6 +13,7 @@
 		./gimp.nix
 		./git.nix
 		./home.nix
+		./hyprfloat.nix
 		./hypridle.nix
 		./hyprlock.nix
 		./jams.nix
