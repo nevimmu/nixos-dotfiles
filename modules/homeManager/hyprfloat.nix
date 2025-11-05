@@ -20,8 +20,8 @@ let
 	# Thinkpad monitor configuration
 	thinkpadMonitors = {
 		"eDP-1" = {
-			width = 767;
-			height = 1364;
+			width = 1364;
+			height = 767;
 			offset = [0 0];
 		};
 	};
