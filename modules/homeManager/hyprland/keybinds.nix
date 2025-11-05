@@ -32,6 +32,9 @@
 		# Projects
 		"SUPER, I, exec, ~/.local/bin/projects.sh"
 
+		# Clipboard history
+		"SUPER, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
+
 		# Control window
 		"SUPER, F, toggleFloating,"
 		"SUPER SHIFT, F, fullscreen,"

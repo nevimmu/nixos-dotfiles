@@ -2,6 +2,7 @@
 {
 	imports = [
 		./bluetooth.nix
+		./clipboard.nix
 		./configuration.nix
 		./docker.nix
 		./environmentVariables.nix
