@@ -11,6 +11,7 @@
 		./dunst.nix
 		./fastfetch.nix
 		./fish.nix
+		./ghostty.nix
 		./gimp.nix
 		./git.nix
 		./home.nix
