@@ -32,6 +32,11 @@ in
   };
 
   config = lib.mkIf config.gnome.enable {
+    # Install GNOME Shell extensions
+    home.packages = with pkgs.gnomeExtensions; [
+      tiling-assistant
+    ];
+
     # Core GNOME Shell prefs that work well with your Hyprland workflow
     dconf.settings = {
       "org/gnome/mutter" = {
