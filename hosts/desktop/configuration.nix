@@ -18,6 +18,9 @@
   # Enable docker
   docker.enable = true;
 
+  # Enable GVFS for virtual file system support.
+	services.gvfs.enable = true;
+
   # Enable Hyprland window manager with XWayland support.
   programs.hyprland = {
     enable = true;
