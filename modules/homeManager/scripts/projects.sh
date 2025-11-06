@@ -14,6 +14,10 @@ if [ "$CHOICE" = "CREATE NEW" ]; then
 		code "$PROJECTS_DIR$NEW_PROJECT"
 	fi
 else
-	code "$PROJECTS_DIR$CHOICE"
+	if [ -f "$PROJECTS_DIR$CHOICE/flake.nix" ]; then
+		cd "$PROJECTS_DIR$CHOICE" && nix develop --command code .
+	else
+		code "$PROJECTS_DIR$CHOICE"
+	fi
 fi
 
