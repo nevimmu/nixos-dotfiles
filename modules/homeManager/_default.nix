@@ -26,5 +26,6 @@
 		./wlogout.nix
 		./wallpaper-maid.nix
 		./zen.nix
+		./dotfiles-desktop.nix
 	];
 }
