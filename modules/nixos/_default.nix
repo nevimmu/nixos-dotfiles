@@ -8,6 +8,7 @@
 		./environmentVariables.nix
 		./gnome.nix
 		./loginManager.nix
+		./nix-your-shell.nix
 		./nvidia.nix
 		./pipewire.nix
 		./sops.nix

@@ -11,6 +11,7 @@
 			starship init fish | source
 			fish_vi_key_bindings
 			zoxide init --cmd cd fish | source
+			nix-your-shell fish | source
 		'';
 
 		functions = {
