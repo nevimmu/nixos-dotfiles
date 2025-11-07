@@ -15,7 +15,7 @@
 		./gimp.nix
 		./git.nix
 		./home.nix
-		./gnome.nix
+		# ./gnome.nix
 		./hyprfloat.nix
 		./hypridle.nix
 		./hyprlock.nix

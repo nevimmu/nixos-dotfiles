@@ -51,6 +51,7 @@ in
 
 			ignore_titles = [
 				"notificationtoasts_\\d+_desktop"
+				"DVD"
 			];
 
 			monitors = selectedMonitors;

@@ -83,6 +83,18 @@
 		"SUPER SHIFT, ccedilla   , movetoworkspace, 9"
 		"SUPER SHIFT, agrave     , movetoworkspace, 10"
 
+
+		"SUPER ALT, ampersand  , movetoworkspacesilent, 1"
+		"SUPER ALT, eacute     , movetoworkspacesilent, 2"
+		"SUPER ALT, quotedbl   , movetoworkspacesilent, 3"
+		"SUPER ALT, apostrophe , movetoworkspacesilent, 4"
+		"SUPER ALT, parenleft  , movetoworkspacesilent, 5"
+		"SUPER ALT, minus      , movetoworkspacesilent, 6"
+		"SUPER ALT, egrave     , movetoworkspacesilent, 7"
+		"SUPER ALT, underscore , movetoworkspacesilent, 8"
+		"SUPER ALT, ccedilla   , movetoworkspacesilent, 9"
+		"SUPER ALT, agrave     , movetoworkspacesilent, 10"
+
 		# Scratchpad
 		"SUPER, N, togglespecialworkspace, scratchpad"
 		"SUPER SHIFT, N, movetoworkspace, special:scratchpad"

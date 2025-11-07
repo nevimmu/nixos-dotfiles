@@ -6,7 +6,7 @@
 		./configuration.nix
 		./docker.nix
 		./environmentVariables.nix
-		./gnome.nix
+		# ./gnome.nix
 		./loginManager.nix
 		./nix-your-shell.nix
 		./nvidia.nix
