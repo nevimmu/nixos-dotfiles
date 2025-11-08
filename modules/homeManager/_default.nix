@@ -21,6 +21,7 @@
 		./hyprlock.nix
 		./jams.nix
 		./kitty.nix
+		./nvf.nix
 		./packages.nix
 		./rofi.nix
 		./wlogout.nix

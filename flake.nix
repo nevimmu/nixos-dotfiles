@@ -4,6 +4,8 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     hyprland.url = "github:hyprwm/Hyprland";
+    nvf.url = "github:notashelf/nvf";
+
     cartographcf-nf.url = "git+ssh://git@github.com/nevimmu/CartographCFNerdFont.git";
 
     jams = {
