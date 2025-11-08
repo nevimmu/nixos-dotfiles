@@ -6,6 +6,7 @@
 		./bluetooth.nix
 		./clipboard.nix
 		./configuration.nix
+		./deluge.nix
 		./docker.nix
 		./environmentVariables.nix
 		# ./gnome.nix

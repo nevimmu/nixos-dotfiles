@@ -8,14 +8,15 @@
 		./affinity.nix
 		./btop.nix
 		./cursor.nix
+		./dotfiles-desktop.nix
 		./dunst.nix
 		./fastfetch.nix
 		./fish.nix
 		./ghostty.nix
 		./gimp.nix
 		./git.nix
-		./home.nix
 		# ./gnome.nix
+		./home.nix
 		./hyprfloat.nix
 		./hypridle.nix
 		./hyprlock.nix
@@ -24,9 +25,8 @@
 		./nvf.nix
 		./packages.nix
 		./rofi.nix
-		./wlogout.nix
 		./wallpaper-maid.nix
+		./wlogout.nix
 		./zen.nix
-		./dotfiles-desktop.nix
 	];
 }

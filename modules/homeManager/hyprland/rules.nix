@@ -28,6 +28,11 @@
 		# Affinity
 		"tile, title:Affinity"
 
+		# Deluge
+		"workspace 6, class:deluge"
+		"float, title:^Add Torrents.*$"
+		"center, title:^Add Torrents.*$"
+
 		# Transparency on some programs
 		"opacity 0.95, class:^(Code|Spotify|discord|org.gnome.Nautilus)$"
 	];
