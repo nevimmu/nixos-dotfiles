@@ -28,7 +28,6 @@
   };
 
   programs.fish.enable = true;
-  programs.firefox.enable = true;
 
   # Define a user account. Don't forget to set a password with 'passwd'.
   users.users.nev = {

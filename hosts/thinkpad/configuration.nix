@@ -22,7 +22,6 @@
   };
 
   programs.fish.enable = true;
-  programs.firefox.enable = true;
 
   # Disable gaming applications
   steam.enable = false;
