@@ -23,7 +23,11 @@
 
   programs.fish.enable = true;
   programs.firefox.enable = true;
+
+  # Disable gaming applications
   steam.enable = false;
+  prismLauncher.enable = false;
+  heroic.enable = false;
 
   # Define a user account. Don't forget to set a password with 'passwd'.
   users.users.nev = {

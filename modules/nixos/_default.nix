@@ -1,6 +1,8 @@
 # NixOS default module
 {
 	imports = [
+		./gaming/_default.nix
+
 		./bluetooth.nix
 		./clipboard.nix
 		./configuration.nix
@@ -13,7 +15,6 @@
 		./pipewire.nix
 		./sops.nix
 		./ssh.nix
-		./steam.nix
 		./tailscale.nix
 	];
 }
