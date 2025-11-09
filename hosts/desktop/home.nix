@@ -8,6 +8,9 @@
   # Desktop-specific monitor configuration
   hyprland.monitorsConfig = "desktop";
 
+  # Enable MangoWC configuration
+  mango.enable = true;
+
   affinity.enable = true;
   
 }

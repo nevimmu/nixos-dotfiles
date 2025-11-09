@@ -8,6 +8,8 @@
 
     cartographcf-nf.url = "git+ssh://git@github.com/nevimmu/CartographCFNerdFont.git";
 
+    mango.url = "github:DreamMaoMao/mango";
+
     jams = {
       url = "github:nevimmu/JAMS";
       inputs.nixpkgs.follows = "nixpkgs";

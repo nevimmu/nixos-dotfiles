@@ -11,6 +11,7 @@
 		./environmentVariables.nix
 		# ./gnome.nix
 		./loginManager.nix
+		./mango.nix
 		./nix-your-shell.nix
 		./nvidia.nix
 		./pipewire.nix
