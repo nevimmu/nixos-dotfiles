@@ -17,6 +17,7 @@
 		./git.nix
 		# ./gnome.nix
 		./home.nix
+		./hyprdvd.nix
 		./hyprfloat.nix
 		./hypridle.nix
 		./hyprlock.nix
