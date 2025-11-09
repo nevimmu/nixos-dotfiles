@@ -4,9 +4,11 @@
   home.packages = with pkgs; [
     discord
     fastfetch
+    freecad
     gcc
     imv
     kdePackages.filelight
+    kicad
     nautilus
     neovim
     nixpkgs-fmt
