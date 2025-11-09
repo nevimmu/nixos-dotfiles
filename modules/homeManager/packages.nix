@@ -5,7 +5,6 @@
     discord
     fastfetch
     gcc
-    hyprshot
     imv
     kdePackages.filelight
     nautilus

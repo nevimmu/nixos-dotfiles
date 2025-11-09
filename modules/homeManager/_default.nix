@@ -21,6 +21,7 @@
 		./hyprfloat.nix
 		./hypridle.nix
 		./hyprlock.nix
+		./hyprshot.nix
 		./jams.nix
 		./kitty.nix
 		./nvf.nix

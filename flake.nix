@@ -27,6 +27,11 @@
       url = "github:nevimmu/hyprdvd";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    
+    hyprshot = {
+      url = "github:nevimmu/Hyprshot";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
