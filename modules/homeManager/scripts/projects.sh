@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 PROJECTS_DIR="${HOME}/Projects/"
 
-CHOICE=$(printf "$(ls $PROJECTS_DIR)\nCREATE NEW" | rofi -dmenu -p "")
+CHOICE=$(printf "$(ls $PROJECTS_DIR)\nCREATE NEW" | rofi -dmenu -i -p "")
 
 if [ -z $CHOICE ]; then
 	exit
