@@ -7,6 +7,7 @@
 			vim = "nvim";
 			ns = "nixos-rebuild --sudo switch --flake .#BunnyGirl";
 			nt = "nixos-rebuild --sudo test --flake .#BunnyGirl";
+			dev = "nix develop";
 		};
 
 		interactiveShellInit = ''
