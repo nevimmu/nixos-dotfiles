@@ -59,7 +59,7 @@
     # CartographCF Nerd Font - optional, requires SSH access during build
     # Uncomment if you have SSH keys set up and access to the private repo
     # inputs.cartographcf-nf.packages.${pkgs.system}.cartographcf-nf
-  ] ++ (if inputs ? cartographcf-nf && inputs.cartographcf-nf ? packages.${pkgs.system}.cartographcf-nf or false
+  ] ++ (if (inputs ? cartographcf-nf) && (inputs.cartographcf-nf.packages.${pkgs.system} or null) != null
         then [ inputs.cartographcf-nf.packages.${pkgs.system}.cartographcf-nf ]
         else [ ]);
 

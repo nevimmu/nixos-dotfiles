@@ -63,8 +63,8 @@ This repository contains configurations for two systems:
    sudo cp /path/to/your/age-key.txt /mnt/var/lib/sops-nix/key.txt
    sudo chmod 600 /mnt/var/lib/sops-nix/key.txt
    
-   # If you have secrets.yaml ready, ensure it's in the secrets/ directory
-   # If not, you can set it up after installation, but home-manager may fail
+   # IMPORTANT: The system will install without decrypted secrets on first run
+   # Secrets will be activated on the first rebuild after installation
    ```
 
 7. **Install NixOS**:
@@ -76,9 +76,10 @@ This repository contains configurations for two systems:
    sudo nixos-install --root /mnt --flake /mnt/etc/nixos#OfficeLady
    ```
    
-   **Note**: If you see errors about `cartographcf-nf` (private font repo), you can either:
-   - Comment out line 9 in `flake.nix` (the font input), OR
-   - Set up SSH keys before installation with access to the private repo
+   **Note**: The private font repository (`cartographcf-nf`) requires SSH access.
+   Since SSH keys aren't available during installation, the system is configured
+   to skip secrets validation on first install. After installation and reboot,
+   you can set up your SSH keys and run `nixos-rebuild switch` to activate secrets.
 
 8. **Set user password**:
    ```bash
