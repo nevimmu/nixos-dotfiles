@@ -42,6 +42,14 @@
 										mountpoint = "/home";
 										mountOptions = [ "compress=zstd" "noatime" ];
 									};
+									"@steam" = {
+										mountpoint = "/home/nev/.steam";
+										mountOptions = [ "compress=zstd" "noatime" ];
+									};
+									"@minecraft" = {
+										mountpoint = "/home/nev/.local/share/PrismLauncher";
+										mountOptions = [ "compress=zstd" "noatime" ];
+									};
 									"@nix" = {
 										mountpoint = "/nix";
 										mountOptions = [ "compress=zstd" "noatime" ];

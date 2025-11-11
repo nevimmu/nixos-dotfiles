@@ -18,6 +18,9 @@
   # Enable docker
   docker.enable = true;
 
+  # Enable snapshots and backups
+  snapshot.enable = false;
+
   # Enable GVFS for virtual file system support.
 	services.gvfs.enable = true;
 
