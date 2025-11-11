@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   imports = [
@@ -7,6 +7,25 @@
 
   programs.zen-browser = {
 		enable = true;
+
+    policies = {
+      AutofillAddressEnabled = false;
+      AutofillCreditCardEnabled = false;
+      DisableAppUpdate = true;
+      DisableFeedbackCommands = true;
+      DisableFirefoxStudies = true;
+      DisablePocket = true;
+      DisableTelemetry = true;
+      DontCheckDefaultBrowser = true;
+      NoDefaultBookmarks = true;
+      OfferToSaveLogins = false;
+      EnableTrackingProtection = {
+        Value = true;
+        Locked = true;
+        Cryptomining = true;
+        Fingerprinting = true;
+      };
+    };
 
 		profiles.default = {
 			settings = {
@@ -24,6 +43,44 @@
 
 			search = {
 				default = "ddg";
+				privateDefault = "ddg";
+        engines = {
+          "Youtube" = {
+            urls = [{template = "https://youtube.com/results?search_query={searchTerms}";}];
+            icon = "https://youtube.com/favicon.ico";
+            definedAliases = ["yt"];
+          };
+          "Nix Packages" = {
+            urls = [{template = "https://search.nixos.org/packages?type=packages&channel=unstable&query={searchTerms}";}];
+            icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = ["np"];
+          };
+          "NixOS Options" = {
+            urls = [{template = "https://search.nixos.org/options?channel=unstable&query={searchTerms}";}];
+            icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = ["no"];
+          };
+          "NixOS Wiki" = {
+            urls = [{template = "https://wiki.nixos.org/w/index.php?search={searchTerms}";}];
+            icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = ["nw"];
+          };
+          "Home Manager Options" = {
+            urls = [{template = "https://home-manager-options.extranix.com/?release=master&query={searchTerms}";}];
+            icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = ["ho"];
+          };
+          "Arch Linux Wiki" = {
+            urls = [{template = "https://wiki.archlinux.org/index.php?search={searchTerms}";}];
+            icon = "https://wiki.archlinux.org/favicon.ico";
+            definedAliases = ["aw"];
+          };
+          "Minecraft Wiki" = {
+            urls = [{template = "https://minecraft.wiki/?search={searchTerms}";}];
+            icon = "https://minecraft.wiki/favicon.ico";
+            definedAliases = ["mw"];
+          };
+        };
 			};
 
 			spacesForce = true;

@@ -9,6 +9,7 @@
     imv
     kdePackages.filelight
     kicad
+    mpv
     nautilus
     neovim
     nixpkgs-fmt
