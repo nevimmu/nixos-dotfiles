@@ -47,12 +47,19 @@ This repository contains configurations for two systems:
    sudo cp /mnt/etc/nixos/hardware-configuration.nix ./hosts/thinkpad/
    ```
 
-5. **Copy dotfiles to target system**:
+5. **Prepare flake for installation**:
+   ```bash
+   # Comment out the private font repository input (requires SSH)
+   # Edit flake.nix and comment out line 9:
+   sed -i 's/^    cartographcf-nf/#    cartographcf-nf/' /tmp/dotfiles/flake.nix
+   ```
+
+6. **Copy dotfiles to target system**:
    ```bash
    sudo cp -r . /mnt/etc/nixos/
    ```
 
-6. **Set up SOPS secrets (REQUIRED before installation)**:
+7. **Set up SOPS secrets (REQUIRED before installation)**:
    ```bash
    # Create the sops-nix key directory
    sudo mkdir -p /mnt/var/lib/sops-nix
@@ -67,7 +74,7 @@ This repository contains configurations for two systems:
    # Secrets will be activated on the first rebuild after installation
    ```
 
-7. **Install NixOS**:
+8. **Install NixOS**:
    ```bash
    # For Desktop
    sudo nixos-install --root /mnt --flake /mnt/etc/nixos#BunnyGirl
@@ -75,29 +82,40 @@ This repository contains configurations for two systems:
    # For ThinkPad
    sudo nixos-install --root /mnt --flake /mnt/etc/nixos#OfficeLady
    ```
-   
-   **Note**: The private font repository (`cartographcf-nf`) requires SSH access.
-   Since SSH keys aren't available during installation, the system is configured
-   to skip secrets validation on first install. After installation and reboot,
-   you can set up your SSH keys and run `nixos-rebuild switch` to activate secrets.
 
-8. **Set user password**:
+9. **Set user password**:
    ```bash
    sudo nixos-enter --root /mnt -c 'passwd nev'
    ```
 
-9. **Reboot**:
+10. **Reboot**:
    ```bash
    sudo reboot
    ```
 
 ### Post-Installation Setup
 
-1. **Clone dotfiles to user directory** (if you want to manage updates):
+After your first boot:
+
+1. **Clone dotfiles to user directory**:
    ```bash
    cd ~
    git clone https://github.com/nevimmu/nixos-dotfiles.git dotfiles
    cd dotfiles
+   ```
+
+2. **Set up SSH keys and decrypt secrets**:
+   ```bash
+   # Your SSH keys will now be available via sops-nix secrets
+   # Uncomment the cartographcf-nf line in flake.nix
+   sed -i 's/^#    cartographcf-nf/    cartographcf-nf/' ~/dotfiles/flake.nix
+   
+   # Update flake lock to fetch the private font repo
+   nix flake update
+   
+   # Rebuild to activate all features including the custom font
+   sudo nixos-rebuild switch --flake .#YourHostName
+   ```
    ```
 
 2. **Set up SSH keys for private repos** (if using cartographcf-nf font):
