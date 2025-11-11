@@ -32,25 +32,25 @@ in
 					local source="$2"
 					local remote_dir="$3"
 
-					local snapshot="${snapshotDir}/${name}-${date}"
+					local snapshot="${snapshotDir}/$name-$date"
 
 					echo "==> Creating snapshot: $snapshot"
 					btrfs subvolume snapshot -r "$source" "$snapshot"
 
-					echo "==> Sending snapshot '$name' to ${remoteHost}:${remote_dir}"
+					echo "==> Sending snapshot '$name' to ${remoteHost}:$remote_dir"
 					if ping -c1 -W1 "${remoteHost}" >/dev/null 2>&1; then
 						btrfs send "$snapshot" | zstd -19 | \
-							ssh "${remoteHost}" "cat > ${remote_dir}/${name}-${date}.btrfs.send.zst"
+							ssh "${remoteHost}" "cat > $remote_dir/$name-$date.btrfs.send.zst"
 						echo "✅ Successfully backed up $name"
 					else
 						echo "⚠️  Host ${remoteHost} not reachable, skipping $name backup"
 					fi
 
 					echo "==> Cleaning up local snapshots older than 7 days for $name"
-					find "${snapshotDir}" -maxdepth 1 -type d -name "${name}-*" -mtime +7 -exec btrfs subvolume delete {} \;
+					find "${snapshotDir}" -maxdepth 1 -type d -name "$name-*" -mtime +7 -exec btrfs subvolume delete {} \;
 
 					echo "==> Cleaning up remote backups older than 15 days for $name"
-					ssh "${remoteHost}" "find ${remote_dir} -type f -name '${name}-*.btrfs.send.zst' -mtime +15 -delete" || true
+					ssh "${remoteHost}" "find $remote_dir -type f -name '$name-*.btrfs.send.zst' -mtime +15 -delete" || true
 				}
 
 				# Perform both backups
