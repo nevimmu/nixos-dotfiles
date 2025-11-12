@@ -3,6 +3,7 @@
 		"waybar"
 		"swww-daemon"
 		# "systemctl --user start hyprpolkitagent"
+		"lxqt-policykit-agent"
 
 		# Clipboard persistence
 		"wl-clip-persist --clipboard both"

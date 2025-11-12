@@ -4,6 +4,7 @@
 	# Packages
   environment.systemPackages = with pkgs; [
     git
+    lxqt.lxqt-policykit
   ];
 
   # Systemd Journal configuration
