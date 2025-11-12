@@ -16,6 +16,7 @@
 		./pipewire.nix
 		./sops.nix
 		./ssh.nix
+		./stylix.nix
 		./tailscale.nix
 	];
 }

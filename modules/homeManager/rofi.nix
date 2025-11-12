@@ -7,7 +7,7 @@ in
 	programs.rofi = {
 		enable = true;
 
-		font = "Cartograph CF Nerd Font 15";
+		# font = "Cartograph CF Nerd Font 15";
 
 		extraConfig = {
 			modi = "drun,run";
@@ -17,11 +17,11 @@ in
 		};
 
 		theme = {
-			"*" = {
-				foreground = mkLiteral "#e0def4";
-				background-color = mkLiteral "transparent";
-				background = mkLiteral "#232136de";
-			};
+			# "*" = {
+			# 	foreground = mkLiteral "#e0def4";
+			# 	background-color = mkLiteral "transparent";
+			# 	background = mkLiteral "#232136de";
+			# };
 
 			"window" = {
 				location = mkLiteral "center";
@@ -31,19 +31,19 @@ in
 				margin = mkLiteral "0px";
 				padding = mkLiteral "10px";
 				border = mkLiteral "2px solid";
-				border-color = mkLiteral "#c4a7e7";
+				# border-color = mkLiteral "#c4a7e7";
 				border-radius = mkLiteral "10px";
-				background-color = mkLiteral "#232136de";
+				# background-color = mkLiteral "#232136de";
 			};
 
-			"textbox" = {
-				text-color = mkLiteral "#e0def4";
-			};
+			# "textbox" = {
+			# 	text-color = mkLiteral "#e0def4";
+			# };
 
-			"element-text" = {
-				vertical-align = mkLiteral "0.5";
-				text-color = mkLiteral "#e0def4";
-			};
+			# "element-text" = {
+			# 	vertical-align = mkLiteral "0.5";
+			# 	text-color = mkLiteral "#e0def4";
+			# };
 
 			"inputbar" = {
 				spacing = mkLiteral "10px";
@@ -58,7 +58,7 @@ in
 			"entry" = {
 				enabled = mkLiteral "true";
 				placeholder = "Search...";
-				text-color = mkLiteral "#e0def4";
+				# text-color = mkLiteral "#e0def4";
 			};
 
 			"element" = {
@@ -69,17 +69,17 @@ in
 				scrollbar = mkLiteral "false";
 			};
 
-			"element normal.normal, element alternate.normal" = {
-				background-color = mkLiteral "transparent";
-			};
+			# "element normal.normal, element alternate.normal" = {
+			# 	background-color = mkLiteral "transparent";
+			# };
 
-			"element selected.normal" = {
-				background-color = mkLiteral "#2a283ede";
-			};
+			# "element selected.normal" = {
+			# 	background-color = mkLiteral "#2a283ede";
+			# };
 
 			"element-icon" = {
 				size = mkLiteral "50px";
-				background-color = mkLiteral "transparent";
+				# background-color = mkLiteral "transparent";
 			};
 		};
 	};

@@ -3,8 +3,8 @@
 		"gaps_in" = 5;
 		"gaps_out" = 20;
 		"border_size" = 2;
-		"col.active_border" = "0xffc4a7e7";
-		"col.inactive_border" = "0xff6e6a86";
+		# "col.active_border" = "0xffc4a7e7";
+		# "col.inactive_border" = "0xff6e6a86";
 		"resize_on_border" = false;
 		"allow_tearing" = false;
 		"layout" = "dwindle";
@@ -22,7 +22,7 @@
 			"enabled" = false;
 			"range" = 4;
 			"render_power" = 3;
-			"color" = "rgba(1a1a1aee)";
+			# "color" = "rgba(1a1a1aee)";
 		};
 
 		blur = {

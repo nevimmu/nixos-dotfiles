@@ -60,6 +60,11 @@
       url = "github:mrshmllow/affinity-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
@@ -71,6 +76,7 @@
         inputs.home-manager.nixosModules.home-manager
         inputs.disko.nixosModules.disko
         inputs.sops-nix.nixosModules.sops
+        inputs.stylix.nixosModules.stylix
       ];
     };
 
@@ -82,6 +88,7 @@
         inputs.home-manager.nixosModules.home-manager
         inputs.disko.nixosModules.disko
         inputs.sops-nix.nixosModules.sops
+        inputs.stylix.nixosModules.stylix
       ];
     };
   };

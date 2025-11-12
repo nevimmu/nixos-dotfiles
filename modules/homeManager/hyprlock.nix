@@ -2,37 +2,37 @@
 	programs.hyprlock = {
 		enable = true;
 		
-		settings = {
-			background = [
-				{
-					path = "screenshot";
-					color = "rgba(25, 20, 20, 1.0)";
-					blur_passes = 2;
-				}
-			];
+		# settings = {
+		# 	background = [
+		# 		{
+		# 			path = "screenshot";
+		# 			color = "rgba(25, 20, 20, 1.0)";
+		# 			blur_passes = 2;
+		# 		}
+		# 	];
 
-			input-field = [
-				{
-					size = "200, 50";
-					outline_thickness = 3;
-					inner_color = "rgb(200, 200, 200)";
+		# 	input-field = [
+		# 		{
+		# 			size = "200, 50";
+		# 			outline_thickness = 3;
+		# 			inner_color = "rgb(200, 200, 200)";
 
-					outer_color = "rgba(33ccff00) rgba(00ff9900) 45deg";
-					check_color = "rgba(00ff22ee)";
-					fail_color = "rgba(ff6633ee) rgba(ff0066ee) 40deg";
+		# 			outer_color = "rgba(33ccff00) rgba(00ff9900) 45deg";
+		# 			check_color = "rgba(00ff22ee)";
+		# 			fail_color = "rgba(ff6633ee) rgba(ff0066ee) 40deg";
 
-					placeholder_text = "";
-					fail_text = "";
+		# 			placeholder_text = "";
+		# 			fail_text = "";
 
-					font_color = "rgb(143, 143, 143)";
-					fade_on_empty = false;
-					rounding = 15;
+		# 			font_color = "rgb(143, 143, 143)";
+		# 			fade_on_empty = false;
+		# 			rounding = 15;
 
-					position = "0, -20";
-					halign = "center";
-					valign = "center";
-				}
-			];
-		};
+		# 			position = "0, -20";
+		# 			halign = "center";
+		# 			valign = "center";
+		# 		}
+		# 	];
+		# };
 	};
 }

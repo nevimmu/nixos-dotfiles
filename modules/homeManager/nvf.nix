@@ -73,16 +73,17 @@
 			statusline = {
 				lualine = {
 					enable = true;
-					theme = "auto";
+					# Theme is managed by Stylix
 				};
 			};
 
-			theme = {
-				enable = true;
-				name = "rose-pine";
-				style = "moon";
-				transparent = false;
-			};
+			# Theme is managed by Stylix
+			# theme = {
+			# 	enable = true;
+			# 	name = "rose-pine";
+			# 	style = "moon";
+			# 	transparent = false;
+			# };
 
 			# ------ NeoTree ------
 			filetree = {
