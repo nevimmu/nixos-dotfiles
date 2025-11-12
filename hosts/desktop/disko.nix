@@ -3,7 +3,7 @@
 		disk = {
 			main = {
 				type = "disk";
-				device = "/dev/nvme1n1";
+				device = "/dev/nvme0n1";
 				content = {
 					type = "gpt";
 					partitions = {
@@ -40,14 +40,6 @@
 									};
 									"@home" = {
 										mountpoint = "/home";
-										mountOptions = [ "compress=zstd" "noatime" ];
-									};
-									"@steam" = {
-										mountpoint = "/home/nev/.steam";
-										mountOptions = [ "compress=zstd" "noatime" ];
-									};
-									"@minecraft" = {
-										mountpoint = "/home/nev/.local/share/PrismLauncher";
 										mountOptions = [ "compress=zstd" "noatime" ];
 									};
 									"@nix" = {

@@ -6,8 +6,6 @@
     hyprland.url = "github:hyprwm/Hyprland";
     nvf.url = "github:notashelf/nvf";
 
-    # CartographCF Nerd Font - Private repo requiring SSH keys
-    # Comment this out for fresh installations, uncomment after SSH keys are set up
     cartographcf-nf.url = "git+ssh://git@github.com/nevimmu/CartographCFNerdFont.git";
 
     jams = {

@@ -14,7 +14,6 @@
 		./nix-your-shell.nix
 		./nvidia.nix
 		./pipewire.nix
-		./snapshot.nix
 		./sops.nix
 		./ssh.nix
 		./tailscale.nix

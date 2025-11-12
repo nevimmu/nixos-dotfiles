@@ -1,7 +1,7 @@
-{ pkgs, config, lib, ... }:
+{ pkgs, config, ... }:
 
 {
-	programs.ssh = lib.mkIf (config.sops.secrets ? "ssh/config") {
+	programs.ssh = {
 		# enable = true;
 		extraConfig = ''
 			Include ${config.sops.secrets."ssh/config".path}
