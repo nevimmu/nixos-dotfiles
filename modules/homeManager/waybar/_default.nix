@@ -19,6 +19,9 @@ in
 		".config/waybar/server_temp.sh".source = ./server_temp.sh;
 	};
 
+	stylix.targets.waybar.addCss = false;
+	stylix.targets.waybar.enable = true;
+
 	programs.waybar = {
 		enable = true;
 
@@ -217,13 +220,11 @@ in
 				font-weight: bold;
 			}
 
-			window#waybar {
-				background-color: rgba(57, 53, 82, .9);
-				border-radius: 10px;
-				color: #e0def4;
-			}
-
-			#custom-spacer {
+		window#waybar {
+			background-color: alpha(@base02, 0.9); /* rgba(57, 53, 82, .9) */
+			border-radius: 10px;
+			color: @base05; /* #e0def4 */
+		}			#custom-spacer {
 				opacity: 0;
 			}
 
@@ -233,7 +234,7 @@ in
 				margin-left: -8px;
 				margin-bottom: -10px;
 				padding: 0px;
-				color: #e0def4;
+				color: @base05; /* #e0def4 */
 			}
 
 			#workspaces button label {
@@ -241,7 +242,7 @@ in
 			}
 
 			#workspaces button.urgent {
-				color: #eb6f92;
+				color: @base08; /* #eb6f92 */
 			}
 
 			#workspaces button:hover {
@@ -249,15 +250,15 @@ in
 				box-shadow: none;
 				text-shadow: none;
 				border: none;
-				color: #c4a7e7;
+				color: @base0D; /* #c4a7e7 */
 			}
 
 			#custom-server_temp {
-				color: #eb6f92;
+				color: @base08; /* #eb6f92 */
 			}
 
 			#custom-audio_switch {
-				color: #3e8fb0;
+				color: @base0B; /* #3e8fb0 */
 			}
 
 			#tray {
@@ -265,7 +266,7 @@ in
 			}
 
 			#clock {
-				color: #c4a7e7;
+				color: @base0D; /* #c4a7e7 */
 				background: inherit;
 				font-weight: 900;
 				font-style: italic;
@@ -274,21 +275,21 @@ in
 			}
 
 			#battery {
-				color: #e0def4;
+				color: @base05; /* #e0def4 */
 				background: inherit;
 				font-size: 20px;
 			}
 
 			#battery.charging {
-				color: #9ccfd8;
+				color: @base0C; /* #9ccfd8 */
 			}
 
 			#battery.warning {
-				color: #f6c177;
+				color: @base09; /* #f6c177 */
 			}
 
 			#battery.critical {
-				color: #eb6f92;
+				color: @base08; /* #eb6f92 */
 			}
 		'';
 	};

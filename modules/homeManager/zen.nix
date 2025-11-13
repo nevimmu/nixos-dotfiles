@@ -5,6 +5,8 @@
     inputs.zen-browser.homeModules.twilight
   ];
 
+  stylix.targets.zen-browser.profileNames = [ "default" ];
+
   programs.zen-browser = {
 		enable = true;
 
@@ -28,6 +30,8 @@
     };
 
 		profiles.default = {
+			id = 0;
+			isDefault = true;
 			settings = {
 				"zen.tabs.show-newtab-vertical" = false;
 				"zen.theme.accent-color" = "#8aadf4";

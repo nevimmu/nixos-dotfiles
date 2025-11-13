@@ -1,4 +1,6 @@
 {
+	stylix.targets.fish.enable = false;
+
 	programs.fish = {
 		enable = true;
 

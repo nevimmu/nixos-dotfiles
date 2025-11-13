@@ -5,6 +5,8 @@
 		inputs.nvf.homeManagerModules.default
 	];
 
+	stylix.targets.nvf.enable = true;
+
 	programs.nvf = {
 		enable = true;
 
@@ -51,7 +53,7 @@
 				borders.enable = true;
 				noice.enable = true;
 				colorizer.enable = true;
-				modes-nvim.enable = true;
+				# modes-nvim.enable = true; # Issue with visual mode
 				illuminate.enable = true;
 				# breadcrumbs = {
 				# 	enable = isMaximal;
@@ -73,13 +75,13 @@
 			statusline = {
 				lualine = {
 					enable = true;
-					# Theme is managed by Stylix
+					# theme = "auto";
 				};
 			};
 
 			# Theme is managed by Stylix
 			# theme = {
-			# 	enable = true;
+			# 	enable = false;
 			# 	name = "rose-pine";
 			# 	style = "moon";
 			# 	transparent = false;

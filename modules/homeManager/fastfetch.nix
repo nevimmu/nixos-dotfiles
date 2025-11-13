@@ -7,14 +7,14 @@
 				padding.top = 2;
 				color = {
 					"1" = "blue";
-					"2" = "magenta";
+					"2" = "cyan";
 				};
 			};
 
 			display = {
 				color = {
-					keys = "magenta";
 					title = "blue";
+					keys = "cyan";
 				};
 			};
 
