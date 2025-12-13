@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     discord
     fastfetch
+    firefox
     freecad
     gcc
     imv

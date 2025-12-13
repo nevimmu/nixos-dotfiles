@@ -57,7 +57,7 @@
 
   # Custom Fonts
   fonts.packages = [
-    inputs.cartographcf-nf.packages.${pkgs.system}.cartographcf-nf
+    inputs.cartographcf-nf.packages.${pkgs.stdenv.hostPlatform.system}.cartographcf-nf
   ];
 
   # Enable networking

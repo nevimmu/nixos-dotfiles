@@ -35,6 +35,12 @@
 
 		# Transparency on some programs
 		"opacity 0.95, class:^(Code|Spotify|discord|org.gnome.Nautilus)$"
+
+		# Minecraft
+		# "fullscreen, class:^(Minecraft\* [0-9]+\.[0-9]+\.[0-9]+)$"
+		"float, title:^Console window for .*$"
+		"size 500 700, title:^Console window for .*$"
+		"center, title:^Console window for .*$"
 	];
 
 	layerrule = [

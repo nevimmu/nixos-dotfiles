@@ -42,6 +42,7 @@ in
 		settings = {
 			terminal_classes = [
 				"kitty"
+				"com.mitchellh.ghostty"
 				"mpv"
 				"imv"
 				"org.gnome.Nautilus"
@@ -52,6 +53,7 @@ in
 			ignore_titles = [
 				"notificationtoasts_\\d+_desktop"
 				"DVD"
+				"— Prism Launcher"
 			];
 
 			monitors = selectedMonitors;

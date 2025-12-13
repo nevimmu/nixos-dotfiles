@@ -17,7 +17,7 @@
 		# Font configuration
 		fonts = {
 			monospace = {
-				package = inputs.cartographcf-nf.packages.${pkgs.system}.cartographcf-nf;
+				package = inputs.cartographcf-nf.packages.${pkgs.stdenv.hostPlatform.system}.cartographcf-nf;
 				name = "CartographCF Nerd Font";
 			};
 
