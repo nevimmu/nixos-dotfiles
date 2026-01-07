@@ -20,11 +20,13 @@
 
     hyprfloat = {
       url = "github:nevimmu/hyprfloat";
+      # url = "path:/home/nev/Projects/hyprfloat";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     hyprdvd = {
       url = "github:nevimmu/hyprdvd";
+      # url = "path:/home/nev/Projects/hyprdvd";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     

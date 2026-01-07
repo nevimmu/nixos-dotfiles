@@ -11,22 +11,22 @@
 
 			listener = [
 				{
-					timeout = 600; # 10 minutes
+					timeout = 900; # 15 minutes
 					on-timeout = "hyprdvd -s";
 				}
 				{
-					timeout = 900; # 15 minutes
+					timeout = 1200; # 20 minutes
 					on-timeout = "loginctl lock-session";
 				}
 				{
 					timeout = 1500; # 25 minutes
 					on-timeout = "hyprctl dispatch dpms off";
-					on-resume = "hyprctl dispatch dpms on";
+					on-resume = "hyprctl dispatch dpms on && pkill waybar && waybar";
 				}
-				{
-					timeout = 2100; # 35 minutes
-					on-timeout = "systemctl suspend";
-				}
+				# {
+				# 	timeout = 2100; # 35 minutes
+				# 	on-timeout = "systemctl suspend";
+				# }
 			];
 		};
 	};

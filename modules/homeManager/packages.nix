@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    calibre
     discord
     fastfetch
     firefox

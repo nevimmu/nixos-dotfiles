@@ -613,11 +613,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1762647263,
-        "narHash": "sha256-KOrKEFFv9LMGwmFzPiHEUG8WDDM41nHaPsmDCqPREjs=",
+        "lastModified": 1766410339,
+        "narHash": "sha256-oKSt6AaJcZlWyl8KAqcVUwJzT9vaqtAqLYic1bESpAM=",
         "owner": "nevimmu",
         "repo": "hyprdvd",
-        "rev": "2c879f6e8979615442c708c66146e00ea1c0a9ef",
+        "rev": "19c8be43bcd4c2313de8f18770e5f16b8e4558e4",
         "type": "github"
       },
       "original": {

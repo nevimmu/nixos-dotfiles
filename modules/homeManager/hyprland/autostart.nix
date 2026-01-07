@@ -2,6 +2,7 @@
 	exec-once = [
 		"waybar"
 		"swww-daemon"
+		"systemctl --user start hypridle.service"
 		# "systemctl --user start hyprpolkitagent"
 		"lxqt-policykit-agent"
 

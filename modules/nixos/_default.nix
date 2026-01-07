@@ -9,6 +9,7 @@
 		./deluge.nix
 		./docker.nix
 		./environmentVariables.nix
+		./ffmpeg.nix
 		# ./gnome.nix
 		./loginManager.nix
 		./nix-your-shell.nix
