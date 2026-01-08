@@ -1,53 +1,53 @@
 {
 	windowrule = [
 		# Ignore maximize requests from apps. You'll probably like this.
-		"suppressevent maximize, class:.*"
+		"suppress_event maximize on, match:class .*"
 
 		# Steam & Heroic Games Launcher on workspace 5
-		"workspace 5 silent, center 1, title:^(Steam|Sign in to Steam|Heroic Games Launcher)$"
+		"workspace 5 silent, match:title ^(Steam|Sign in to Steam|Heroic Games Launcher)$"
+		"center on, match:title ^(Steam|Sign in to Steam|Heroic Games Launcher)$"
 
 		# Discord and Spotify on workspace 10
-		"workspace 10 silent, class:^(discord|Spotify)$"
+		"workspace 10 silent, match:class ^(discord|Spotify)$"
 
 		# Float and center client with the class "center-float"
-		"float, class:^(center-float)$"
-		"center, class:^(center-float)$"
-		"size 900 700, class:^(center-float)$"
+		"float on, match:class ^(center-float)$"
+		"center on, match:class ^(center-float)$"
+		"size 900 700, match:class ^(center-float)$"
 
 		# Fix some dragging issues with XWayland
-		"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-	];
+		"no_focus on, match:class ^$, match:title ^$, match:xwayland true, match:float true, match:fullscreen false, match:pin false"
 
-	windowrulev2 = [
 		# PIP
-		"float, title:Picture-in-Picture"
-		"workspace 10, title:Picture-in-Picture"
-		"size 1036 931, title:Picture-in-Picture"
-		"move 22 22, title:Picture-in-Picture"
+		"float on, match:title Picture-in-Picture"
+		"workspace 10, match:title Picture-in-Picture"
+		"size 1036 931, match:title Picture-in-Picture"
+		"move 22 22, match:title Picture-in-Picture"
 
 		# Affinity
-		"tile, title:Affinity"
+		"tile on, match:title Affinity"
 
 		# Deluge
-		"workspace 6, class:deluge"
-		"float, title:^Add Torrents.*$"
-		"center, title:^Add Torrents.*$"
+		"workspace 6, match:class deluge"
+		"float on, match:title ^Add Torrents.*$"
+		"center on, match:title ^Add Torrents.*$"
 
 		# Transparency on some programs
-		"opacity 0.95, class:^(Code|Spotify|discord|org.gnome.Nautilus)$"
+		"opacity 0.95, match:class ^(Code|Spotify|discord|org.gnome.Nautilus)$"
 
 		# Minecraft
-		# "fullscreen, class:^(Minecraft\* [0-9]+\.[0-9]+\.[0-9]+)$"
-		"float, title:^Console window for .*$"
-		"size 500 700, title:^Console window for .*$"
-		"center, title:^Console window for .*$"
+		# "fullscreen on, match:class ^(Minecraft\\* [0-9]+\\.[0-9]+\\.[0-9]+)$"
+		"float on, match:title ^Console window for .*$"
+		"size 500 700, match:title ^Console window for .*$"
+		"center on, match:title ^Console window for .*$"
 	];
 
 	layerrule = [
 		# Add blur to rofi
-		"blur, rofi"
-		"ignorealpha, rofi"
+		"blur on, match:namespace rofi"
+		"ignore_alpha on, match:namespace rofi"
 
-		"blur, waybar"
+		# Add blur to waybar
+		"blur on, match:namespace waybar"
 	];
 }
