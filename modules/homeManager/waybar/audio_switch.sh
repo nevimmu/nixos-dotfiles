@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-SPEAKER="alsa_output.usb-BEHRINGER_UMC202HD_192k-00.HiFi__Line1__sink"
+SPEAKER="alsa_output.usb-BEHRINGER_UMC202HD_192k-00.HiFi__Line__sink"
 HEADSET="alsa_output.usb-Schiit_Audio_Schiit_Unison_Modius-00.analog-stereo"
 
 get_id() {

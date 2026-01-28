@@ -3,6 +3,7 @@
 	imports = [
 		./gaming/_default.nix
 
+		./blender.nix
 		./bluetooth.nix
 		./clipboard.nix
 		./configuration.nix
