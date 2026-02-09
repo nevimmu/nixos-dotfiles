@@ -11,6 +11,7 @@
 		./docker.nix
 		./environmentVariables.nix
 		./ffmpeg.nix
+		./freecad.nix
 		# ./gnome.nix
 		./loginManager.nix
 		./nix-your-shell.nix

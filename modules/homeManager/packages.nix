@@ -3,10 +3,10 @@
 {
   home.packages = with pkgs; [
     calibre
+    # chromium
     discord
     fastfetch
     firefox
-    freecad
     gcc
     imv
     kdePackages.filelight
