@@ -51,7 +51,7 @@
 
 			ui = {
 				borders.enable = true;
-				noice.enable = true;
+				noice.enable = false;
 				colorizer.enable = true;
 				# modes-nvim.enable = true; # Issue with visual mode
 				illuminate.enable = true;
