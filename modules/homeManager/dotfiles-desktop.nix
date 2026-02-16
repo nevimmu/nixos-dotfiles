@@ -13,11 +13,11 @@
     Categories=Development;IDE;
   '';
 
-  home.file.".local/share/applications/freecad.desktop".text = ''
+  home.file.".local/share/applications/org.freecad.FreeCAD.desktop".text = ''
     [Desktop Entry]
     Version=1.0
     Type=Application
-    Name=FreeCAD (Wayland)
+    Name=FreeCAD
     Comment=Feature based parametric modeler
     Exec=env QT_QPA_PLATFORM=xcb ${pkgs.freecad}/bin/freecad %F
     Icon=freecad
