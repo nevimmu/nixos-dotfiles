@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     calibre
-    # chromium
+    chromium
     discord
     fastfetch
     firefox
