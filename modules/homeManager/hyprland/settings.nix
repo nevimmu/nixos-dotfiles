@@ -1,7 +1,7 @@
 {
 	general = {
-		"gaps_in" = 5;
-		"gaps_out" = 20;
+		"gaps_in" = 2;
+		"gaps_out" = 10;
 		"border_size" = 2;
 		# "col.active_border" = "0xffc4a7e7";
 		# "col.inactive_border" = "0xff6e6a86";

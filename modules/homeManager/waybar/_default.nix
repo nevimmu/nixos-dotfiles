@@ -31,10 +31,10 @@ in
 				"mod" = "dock";
 				"width" = 50;
 				"output" = selectedOutput;
-				"margin-left" = 20;
-				"margin-right" = -10;
-				"margin-top" = 20;
-				"margin-bottom" = 20;
+				"margin-left" = 10;
+				"margin-right" = -5;
+				"margin-top" = 10;
+				"margin-bottom" = 10;
 				"reload_style_on_change" = true;
 				"modules-left" = [
 					"custom/spacer"
