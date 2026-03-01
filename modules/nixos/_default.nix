@@ -8,6 +8,7 @@
 		./clipboard.nix
 		./configuration.nix
 		./deluge.nix
+		./disk.nix
 		./docker.nix
 		./environmentVariables.nix
 		./ffmpeg.nix
