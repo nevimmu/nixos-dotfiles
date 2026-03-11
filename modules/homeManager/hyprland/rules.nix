@@ -21,8 +21,8 @@
 		# PIP
 		"float on, match:title Picture-in-Picture"
 		"workspace 10, match:title Picture-in-Picture"
-		"size 1036 931, match:title Picture-in-Picture"
-		"move 22 22, match:title Picture-in-Picture"
+		"size 1056 944, match:title Picture-in-Picture"
+		"move 12 12, match:title Picture-in-Picture"
 
 		# Affinity
 		"tile on, match:title Affinity"

@@ -5,7 +5,7 @@
 		settings = {
 		global = {
 			width = "(80, 600)";
-			offset = "(10, 10)";
+			offset = "(5, 5)";
 			progress_bar_min_width = 380;
 			progress_bar_max_width = 380;
 			progress_bar_corner_radius = 2;

@@ -44,7 +44,7 @@ in
 					"hyprland/window"
 				];
 				"modules-right" = [
-					"custom/server_temp"
+					# "custom/server_temp"
 					"custom/spacer"
 				] ++ audioSwitch ++ [
 				] ++ batteryModule ++ [

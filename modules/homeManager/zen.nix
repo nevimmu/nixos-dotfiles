@@ -85,32 +85,38 @@
             position = 104;
             isEssential = true;
           };
+          "Donetick" = {
+            id = "1214a928-529b-4460-8bbc-584ed2238dcf";
+            url = "https://donetick.nevimmu.xyz";
+            position = 105;
+            isEssential = true;
+          };
           "GitHub" = {
             id = "48e8a101-5a14-4826-9545-91c8e8dd4bf6";
             workspace = "cdd10fab-4hj5-494b-9041-325e5759195b";
             url = "https://github.com";
-            position = 105;
+            position = 106;
             isEssential = false;
           };
           "Deepseek" = {
             id = "199e7744-75d2-475a-ac2d-bec2f2c263d3";
             workspace = "cdd10fab-4hj5-494b-9041-325e5759195b";
             url = "https://chat.deepseek.com/";
-            position = 106;
+            position = 107;
             isEssential = false;
           };
           "ChatGPT" = {
             id = "9410d71e-35a0-4c2d-b240-51cda2662d60";
             workspace = "cdd10fab-4hj5-494b-9041-325e5759195b";
             url = "https://chatgpt.com/";
-            position = 107;
+            position = 108;
             isEssential = false;
           };
           "Gemini" = {
             id = "54abcbe3-f757-49a1-a0bf-d419f45de06c";
             workspace = "cdd10fab-4hj5-494b-9041-325e5759195b";
             url = "https://gemini.google.com/app";
-            position = 108;
+            position = 109;
             isEssential = false;
           };
         };
