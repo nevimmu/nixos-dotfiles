@@ -15,13 +15,13 @@
 					on-timeout = "hyprdvd -s";
 				}
 				{
-					timeout = 1200; # 20 minutes
-					on-timeout = "loginctl lock-session && pkill waybar && waybar";
-				}
-				{
-					timeout = 1500; # 25 minutes
+					timeout = 1200; # 25 minutes
 					on-timeout = "hyprctl dispatch dpms off";
 					on-resume = "hyprctl dispatch dpms on";
+				}
+				{
+					timeout = 1500; # 20 minutes
+					on-timeout = "loginctl lock-session && pkill waybar && waybar";
 				}
 				# {
 				# 	timeout = 2100; # 35 minutes

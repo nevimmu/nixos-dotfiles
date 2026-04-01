@@ -5,6 +5,7 @@
     # calibre
     chromium
     discord
+    melonds
     fastfetch
     firefox
     gcc

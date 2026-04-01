@@ -9,5 +9,6 @@
   hyprland.monitorsConfig = "desktop";
 
   affinity.enable = true;
+  ollama.enable = true;
   
 }
